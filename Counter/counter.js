@@ -18,6 +18,15 @@ btns.forEach(function (btn) {
     else {
       count++;
     }
+    if (count > 0) {
+      value.style.color = 'green';
+    }
+    if (count < 0) {
+      value.style.color = 'red';
+    }
+    if (count == 0) {
+      value.style.color = '#222';
+    }
     value.textContent = count;
   });
 });
