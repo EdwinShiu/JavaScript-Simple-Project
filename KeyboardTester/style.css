@@ -1,0 +1,134 @@
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --spacing: 0.125rem;
+  --color-primary: hsl(206, 87%, 96%);
+  --color-background: rgba(0,0,0,0.6);
+  --color-released: hsl(119, 58%, 36%);
+  --color-pressed: hsl(300, 0%, 93%);
+  --color-text-primary: hsl(300, 0%, 93%);
+  --color-text-secondary: hsl(300, 0%, 10%);
+}
+
+*,
+::before, 
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: var(--ff-primary);
+}
+
+h1, h2, h3, h4 {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  color: var(--color-text-secondary);
+}
+
+.section-center {
+  place-items: center;
+  text-align: center;
+  margin: 4rem, auto;
+}
+
+.some-space {
+  display: inline-block;
+  width: 1.125rem;
+  height: 2.5rem;
+}
+
+.half-space {
+  display: inline-block;
+  width: 1.25rem;
+  height: 2.5rem;
+}
+
+.full-space {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.key.spacebar {
+  width: 17.375rem;
+}
+
+.key.double-height {
+  height: 5.25rem;
+  float: right;
+  margin: 0 0 0 0.25rem;
+}
+
+.key.key-175-more {
+  width: 7.375rem;
+}
+
+.key.key-125-more {
+  width: 5.875rem;
+}
+
+.key.key-100-more {
+  width: 5.25rem;
+}
+
+.key.key-75-more {
+  width: 4.625rem
+}
+
+.key.key-50-more {
+  width: 3.875rem;
+}
+
+.key.key-25-more {
+  width: 3.125rem;
+}
+
+.key {
+  vertical-align: top;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-text-primary);
+}
+
+.key p {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: var(--color-text-primary);
+  padding: 0.125rem;
+}
+
+.keyboard-row {
+  display: inline-block;
+  margin: 0 0 1rem 0;
+}
+
+.keyboard-container {
+  display: inline-block;
+  width: 63.25rem;
+}
+
+.keyboard-base {
+  display: inline-block;
+  background-color: var(--color-background);
+  padding: 2rem 3rem;
+  margin-top: 7rem; 
+}
+
+.pressed p{
+  color: var(--color-text-secondary);
+}
+
+.pressed {
+  background-color: var(--color-pressed);
+  color: var(--color-text-secondary);
+  border-color: var(--color-text-secondary);
+}
+
+.released {
+  background-color: var(--color-released);
+}
